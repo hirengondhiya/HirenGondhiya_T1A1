@@ -49,8 +49,8 @@ def allergies_list(allergies, invalid_input=false)
     if invalid_input
         puts "Please enter values from given categories only. Please try again."
     end
-    puts "Which item do you want to test for? "
-    puts "Please enter an item only from following:  #{allergies.keys.map {|a| a.capitalize}.join(", ")}"
+    puts "Which allergy do you want to test for? "
+    puts "Please enter an allergy only from following:  #{allergies.keys.map {|a| a.capitalize}.join(", ")}"
     return gets.chomp
 end
 item = allergies_list(allergies)
@@ -62,7 +62,7 @@ def input_score invalid_input=false
     if invalid_input
         puts "Only Integer values from 1 to 255 are acceptable. Please try again."
     end
-    puts "Please enter your score (Integer value between 1 and 255 both inclusive): "
+    puts "Please enter your allergy score (Integer value between 1 and 255 both inclusive): "
     return gets.chomp.to_i
 end
 score = input_score
