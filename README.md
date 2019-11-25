@@ -1,6 +1,20 @@
 # Q1	
 **Research the development of the internet from 1980 to today. You must describe at least FIVE key events in the development of the internet. You can refer to events, people of significance, or technologies and how they have changed over time.	300 - 500**
+The internet development started nearly fourty years back with he U.S. military's funding of a research network called Arpanet in 1969. Many of the researchers who worked on ARPANET made significant contributions to the evolution of the Internet, including Leonard Kleinrock, inventor of packet switching (a basic Internet technology). Vinton Cerf and Robert Kahn invented TCP/IP protocol in the 1970s, and in 1972, Ray Tomlinson introduced network email.
 
+In 1984, the Internet's Domain Name System was created to match complex IP addresses with easy-to-remember names ending in extensions such as .com, .org, .edu, .gov, .mil and country codes including .de for Germany. 
+
+In 1989 @The World (http://world.std.com/) became the first commercial Internet Service Provider which provided access to the internet for the general public via dial-up network service.
+
+In 1990, Tim Berners-Lee invented the World Wide Web as a method of publishing information in a hypertext format on the Internet. 
+
+In 1993, after computer science student Marc Andreessen created the first popular Web browser, known as Mosaic. The Mosaic browser contributed to very fast adoption of the World Wide Web. Since then the number of Web sites and Web pages has exploded.
+
+By 1987, the number of hosts on internet exceeded 20,000 nodes at the same time Cisco shipped it's first router.
+
+In 1997, the 802.11 standard (the standards that makes WiFi feasible) was established. Vic Hayes has been credited as the "father of Wi-Fi" because he chaired the IEEE committee that created the 802.11 standards. At about the same time, Commonwealth Scientific and Industrial Research Organisation (CSIRO) of Australia invented a chip that greatly improved the signal quality of WiFi. CSIRO credits the following inventors for creating the technology: Dr. John O’Sullivan, Dr. Terry Percival, Mr. Diet Ostry, Mr. Graham Daniels, and Mr. John Deane.
+
+In 1998, the Internet Protocol version 6 was introduced, to allow for future growth of Internet Addresses. The current most widely used protocol is version 4. IPv4 uses 32-bit addresses allowing for 4.3 billion unique addresses; IPv6, with 128-bit addresses, will allow 3.4 x 1038 unique addresses, or 340 trillion trillion trillion.
 
 # Q2
 **Define the features of the following technologies that are essential in terms of the development of the internet:**
@@ -95,6 +109,7 @@ ii. Write pseudocode for the process outlined in your flowchart**
   - chocolate (32)
   - pollen (64)
   - cats (128)
+
 **So if Tom is allergic to peanuts and chocolate, he gets a score of 34.**
 
 **Write a program that, given a person’s score can tell them:**
