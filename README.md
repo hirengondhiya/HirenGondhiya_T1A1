@@ -1,6 +1,6 @@
 # Q1	
 **Research the development of the internet from 1980 to today. You must describe at least FIVE key events in the development of the internet. You can refer to events, people of significance, or technologies and how they have changed over time.	300 - 500**
-The internet development started nearly fourty years back with he U.S. military's funding of a research network called Arpanet in 1969. Many of the researchers who worked on ARPANET made significant contributions to the evolution of the Internet, including Leonard Kleinrock, inventor of packet switching (a basic Internet technology). Vinton Cerf and Robert Kahn invented TCP/IP protocol in the 1970s, and in 1972, Ray Tomlinson introduced network email.
+The internet development started nearly fifty years back with he U.S. military's funding of a research network called Arpanet in 1969. Many of the researchers who worked on ARPANET made significant contributions to the evolution of the Internet, including Leonard Kleinrock, inventor of packet switching (a basic Internet technology). Vinton Cerf and Robert Kahn invented TCP/IP protocol in the 1970s, and in 1972, Ray Tomlinson introduced network email.
 
 In 1984, the Internet's Domain Name System was created to match complex IP addresses with easy-to-remember names ending in extensions such as .com, .org, .edu, .gov, .mil and country codes including .de for Germany. 
 
