@@ -8,7 +8,7 @@ In 1989 @The World (http://world.std.com/) became the first commercial Internet 
 
 In 1990, Tim Berners-Lee invented the World Wide Web as a method of publishing information in a hypertext format on the Internet. 
 
-In 1993, after computer science student Marc Andreessen created the first popular Web browser, known as Mosaic. The Mosaic browser contributed to very fast adoption of the World Wide Web. Since then the number of Web sites and Web pages has exploded.
+In 1993, computer science student Marc Andreessen created the first popular Web browser, known as Mosaic. The Mosaic browser contributed to very fast spread of the World Wide Web. Since then the number of Web sites and Web pages has exploded.
 
 By 1987, the number of hosts on internet exceeded 20,000 nodes at the same time Cisco shipped it's first router.
 
