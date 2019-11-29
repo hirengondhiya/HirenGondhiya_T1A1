@@ -15,23 +15,15 @@
 # b. the full list of allergies.
 
 allergies = {
-    "eggs" => 1,
-    "peanuts" => 2,
-    "shellfish" => 4,
-    "strawberries" => 8,
-    "tomatoes" => 16,
-    "chocolate" => 32,
-    "pollen" => 64,
-    "cats" => 128
+    "1": "eggs",
+    "2": "peanuts",
+    "4": "shellfish",
+    "8": "strawberries",
+    "16": "tomatoes",
+    "32": "chocolate",
+    "64": "pollen",
+    "128": "cats"
 }
-
-max_score = 0;
-allergies.each_value {
-    |value|
-    max_score += value
-}
-
-puts "Max score: #{max_score}"
 
 def get_name invalid_input=false
     if invalid_input
@@ -50,22 +42,42 @@ def allergies_list(allergies, invalid_input=false)
         puts "Please enter values from given categories only. Please try again."
     end
     puts "Which allergy do you want to test for? "
-    puts "Please enter an allergy only from following:  #{allergies.keys.map {|a| a.capitalize}.join(", ")}"
+    puts "Please enter an allergy only from following:  #{allergies.values.map {|a| a.capitalize}.join(", ")}"
     return gets.chomp
 end
 item = allergies_list(allergies)
-while !(allergies.each_key.map {|a| a.upcase}.include? item.upcase)
+while !(allergies.each_value.map {|a| a.upcase}.include? item.upcase)
     item = allergies_list(allergies, true)
 end
 
 def input_score invalid_input=false
     if invalid_input
-        puts "Only Integer values from 1 to 255 are acceptable. Please try again."
+        puts "Only Integer values from 0 to 255 are acceptable. Please try again."
     end
-    puts "Please enter your allergy score (Integer value between 1 and 255 both inclusive): "
+    puts "Please enter your allergy score (Integer value between 0 and 255 both inclusive): "
     return gets.chomp.to_i
 end
 score = input_score
-while score < 1 || score > 255
+while score < 0 || score > 255
     score = input_score true
+end
+
+if (score > 0)
+    s = score
+    m = 128
+
+    tested_allergies = []
+    while (m > 0)
+        if (s/m > 0)
+            tested_allergies.push(allergies[m.to_s.to_sym])
+            s = s % m        
+        end
+        m = m/2
+    end
+
+    puts "#{user_name} is tested #{tested_allergies.include?(item) ? 'positive' : 'negative'} for #{item} allergy." 
+
+    puts "#{user_name} is allergic to: #{tested_allergies.map {|t| t != nil ? t.capitalize : nil}.join(", ")}" 
+else
+    puts "#{user_name} is not allergic to anything."
 end
