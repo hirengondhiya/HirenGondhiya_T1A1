@@ -17,7 +17,6 @@ The internet development started nearly fifty years back with he U.S. military's
 - In 1997, the 802.11 standard (the standards that makes WiFi feasible) was established. Vic Hayes has been credited as the "father of Wi-Fi" because he chaired the IEEE committee that created the 802.11 standards. At about the same time, Commonwealth Scientific and Industrial Research Organisation (CSIRO) of Australia invented a chip that greatly improved the signal quality of WiFi. CSIRO credits the following inventors for creating the technology: Dr. John O’Sullivan, Dr. Terry Percival, Mr. Diet Ostry, Mr. Graham Daniels, and Mr. John Deane.
 
 - In 1998, the Internet Protocol version 6 was introduced, to allow for future growth of Internet Addresses. The current most widely used protocol is version 4. IPv4 uses 32-bit addresses allowing for 4.3 billion unique addresses; IPv6, with 128-bit addresses, will allow 3.4 x 1038 unique addresses, or 340 trillion trillion trillion addresses.
-
 # Q2
 **Define the features of the following technologies that are essential in terms of the development of the internet:**
 
@@ -27,10 +26,12 @@ The internet development started nearly fifty years back with he U.S. military's
   - domains and DNS
 ---
   1. _**Packets**_
-    Everything we do on the interent involves packets. All information sent over internet is broken into small pieces and then sent across the internet as a series "Packets". A packet is nothing but small part of the information sent from a device to another over the internet. Networks that ship data around in small packets are called **packet switched networks**.
+    Everything we do on the interent involves packets. All information sent over internet is broken into small pieces and then sent across the internet as a series of "Packets". A packet is nothing but small part of the information sent from a device to another over the internet. Networks that ship data around in small packets are called **packet switched networks**.
 
   Each packet carries the information that will help it get to its destination. Most network packets are split into three parts as described below:
-    ![Packet Structure](./images/q2-packet-structure.gif)
+    ![Packet Structure](./docs/q2-packet-structure.gif)
+    
+*Image source: https://computer.howstuffworks.com/question5251.htm*
     
   - **Header** The header contains instructions about the data carried by the packet. These instructions may include:
       - *Length of packet* (some networks have fixed-length packets, while others rely on the header to contain this information)
@@ -83,16 +84,126 @@ The internet development started nearly fifty years back with he U.S. military's
   - HTTP and HTTPS
   - web browsers (requests, rendering and developer tools)
 
+  ---
+  
+
 **Explain how each technology has contributed to the development of client and server communication over the internet	50 - 150 words for each technology**
 
+---
+  1. Its features essential in development of internet
+  2. How it contributed to the development of client and server communication.
+
+- TCP
+    
+    Transmission control protocol (TCP) is a network communication protocol designed to send data packets over the Internet.
+
+    Transmission Control Protocol is one of the most used protocols in digital network communications and is part of the Internet protocol suite, commonly known as the TCP/IP suite. Primarily, TCP ensures end-to-end delivery of data between distinct nodes. TCP works in collaboration with Internet Protocol, which defines the logical location of the remote node, whereas TCP transports and ensures that the data is delivered to the correct destination.
+
+    Before transmitting data, TCP creates a connection between the source and destination node and keeps it live until the communication is active. TCP breaks large data into smaller packets and also ensures that the data integrity is intact once it is reassembled at the destination node.
+
+- HTTP and HTTPS
+  
+    HTTP and HTTPS are both responsible for providing a channel where data can be transmitted between a user's device and a web server so that normal web browsing functions can take place.
+
+    HTTP stands for HyperText Transfer Protocol, and it's the network protocol used by the World Wide Web that lets you open web page links and jumps from one page to the next across search engines and other websites.
+
+    When a web page that uses HTTP is requested by a user, the web browser uses the HyperText Transfer Protocol (over port 80) to request the page from the webserver. When the webserver receives and accepts the request, it uses the same protocol to send the page back to the client.
+
+    This protocol is the foundation for large, multi-functioning, multi-input systems — like the web. The web as we know it wouldn't function without this bedrock of communication processes, as links rely on HTTP in order to work properly.
+
+  However, HTTP sends and receives data in plaintext. This means that when browsing a website that uses HTTP, anyone listening in on the network can see everything that's being communicated between the client browser and the server. This includes passwords, messages, files, etc.
+
+  HTTPS is very similar to HTTP, with the key difference being that it is secure, which is what the **s** at the end of HTTPS stands for.
+
+  HyperText Transfer Protocol Secure uses a protocol called SSL (Secure Sockets Layer) or TLS (Transport Layer Security), which essentially wraps the data between the client browser and the server in a secure, encrypted tunnel over port 443. This makes it much harder for packet sniffers to decipher, unlike HTTP.
+
+  TLS and SSL are especially useful when shopping online to keep financial data secure, but is also used on any website that requires sensitive data (e.g., passwords, personal information, payment details).
+
+  Another benefit of HTTPS over HTTP is that it's much faster, meaning that web pages load quicker over HTTPS. The reason for this is because HTTPS is already understood to be secure, so no scanning or filtering of data has to take place, resulting in less data being transferred and ultimately quicker transfer times.
+
+
+- web browsers (requests, rendering and developer tools)
+
+  A web browser is a software program that allows a user to locate, access, and display web pages. Browsers are used primarily for displaying and accessing websites on the internet, as well as other content created using languages such as Hypertext Markup Language (HTML) and Extensible Markup Language (XML).
+
+  A variety of web browsers are available with different features, and are designed to run on different operating systems. Common browsers include Internet Explorer from Microsoft, Firefox from Mozilla, Google Chrome, Safari from Apple, and Opera. All major browsers have mobile versions that are lightweight versions for accessing the web on mobile devices.
+
+  Web browsers date back to the late 1980s when an English scientist, Tim Berners-Lee, first developed the ideas that led to the World Wide Web (WWW). This consisted of a series of pages created using the HTML language and joined or linked together with pointers called hyperlinks.
+
+  Mosaic was one of the first browser built by Marc Andreesen in 1993.
 # Q4
 **Identify THREE data structures used in the Ruby programming language and explain the reasons for using each.	50 - 100 words on each data structure**
+---
+1. Arrays:
+
+    Ruby arrays are ordered, integer-indexed collections of any object. Each element in an array is associated with and referred to by an index.
+
+    Array indexing starts at 0, as in C or Java. A negative index is assumed relative to the end of the array --- that is, an index of -1 indicates the last element of the array, -2 is the next to last element in the array, and so on.
+
+    Ruby arrays can hold objects such as String, Integer, Fixnum, Hash, Symbol, even other Array objects. Ruby arrays are not as rigid as arrays in other languages. Ruby arrays grow automatically while adding elements to them.
+
+    Arrays are generally used to store list of data into a program.
+2. Hash:
+    
+    A Hash is a collection of key-value pairs like this: "employee" = > "salary". It is similar to an Array, except that indexing is done via arbitrary keys of any object type, not an integer index.
+
+    The order in which you traverse a hash by either key or value may seem arbitrary and will generally not be in the insertion order. If you attempt to access a hash with a key that does not exist, the method will return nil.
+
+    The hashes are mainly used to retrieve the values associated with a key without traversing through entire collection.
+3. Integer:
+    
+    Ruby supports integer numbers. An integer number can range from -230 to 230-1 or -262 to 262-1. Integers within this range are objects of class Fixnum and integers outside this range are stored in objects of class Bignum.
+
+    You write integers using an optional leading sign, an optional base indicator (0 for octal, 0x for hex, or 0b for binary), followed by a string of digits in the appropriate base. Underscore characters are ignored in the digit string.
+
+    You can also get the integer value, corresponding to an ASCII character or escape the sequence by preceding it with a question mark.
 
 # Q5
 **Describe the features of interpreters and compilers and how they are different.	100 - 200 words on each way code is executed.**
+---
+1. Compiler
+
+A compiler is a software program that transforms high-level source code that is written by a developer in a high-level programming language into a low level object code (binary code) in machine language, which can be understood by the computer processor. 
+- Compiler analyses entire source code and then generates the binary code if there is no error.
+- Compilation process invovles following four steps Scanning, Lexical Analysis, Syntactic Analysis, Semantic Analysis.
+
+2. Interpreter
+
+An interpreter is a computer program that directly executes instructions written in a programming or scripting language, without requiring them previously to have been compiled into a machine language program. As a result of this runtime interpretation, an interpreted program executes more slowly and consumes more resources than an equivalent standalone machine code executable would. 
+
+The difference between an interpreter and a compiler is given below:
+| Interpreter                                                                                                      | Compiler                                                                                                                                   |
+|------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| The machine language code generated by interpreter is executed immediately after the code is interpreted.        | The machine language code generated by the compiler is not executed immediately but stored on computer hard drive as an executable binary. |
+| Translates program one statement at a time.                                                                      | Scans the entire program and translates it as a whole into machine code.                                                                   |
+| It takes less amount of time to analyze the source code but the overall execution time is slower.                | It takes large amount of time to analyze the source code but the overall execution time is comparatively faster.                           |
+| No intermediate object code is generated, hence are memory efficient.                                            | Generates intermediate object code which further requires linking, hence requires more memory.                                             |
+| Continues translating the program until the first error is met, in which case it stops. Hence debugging is easy. | It generates the error message only after scanning the whole program. Hence debugging is comparatively hard.                               |
+| Programming language like Python, Ruby use interpreters.                                                         | Programming language like C, C++ use compilers.                                                                                            |
 
 # Q6
 **Identify TWO commonly used programming languages and explain the benefits and drawbacks of each.	200 - 400 words on each language**
+---
+1. C#
+C# is one of the languages supported by Microsoft .NET framework. The C# language is the preferred architecture for backend programming and automation in Windows environments. 
+- Benefits:
+  - Its C-style syntax is much more popular with programmers who are used to languages such as Java or C++. Due to this it is very easy to adopt programmers who have experience with other programming languages.
+  - It integrates well with Windows. You don't need any special configurations to get a C# program to run in your Windows environment. Whether it's a web application, a Windows service, or a desktop app, C# programs are easily deployed on the network. As long as the target server or workstation supports .NET, your C# program deployment should be a smooth transition from development to production.
+  - C# is a compiled language, which means that the code stored on a public-facing server is in binary form. If the server gets hacked, the hacker doesn't automatically have access to the source code, with C#, the hacker must decompile or "crack" the software before the critical components of the program can be exploited.
+- Drawbacks
+  - Eventhough compiling provides advantages it has its drawbacks as well which are inherited by C# being the compiled language. For example: Since the source code must be compiled each time a change is made, the whole application is required to be deployed again. This often leads to added bugs if a minor change isn't thoroughly tested.
+  - Since C# is a part of the .NET framework, the server running the application must support the .Net ecosystem.
+
+2. C Programming
+- Benefits
+  - Faster app execution: C compiler convets the source code into machine level binary code. This results in efficient program execution since the system can execute the application without need for additional run time to execute the application.
+  - Ability to run on minimum hardware: The resultant binary from C program is very light weight application which can run with system with minimal resources. Hence C programming is very useful to create firmware for smart devices.
+- Drawbacks
+  - Does not support OOPS: C programming language does not support oops (Object Oriented Programming) features which leads to a lot of difficulty in maintaining a large code base.
+  - No run time type checking: A C program does not check if valid data type is assigned to a variable or another type during execution of a program instead it does automatic type conversion. This leads to undesired results and complex bugs if programmer is not mindful of the above fact.
+  - No Exception Handling: The C compiler checks for syntax errors however there is no provision to handle run time errors. This results in application crashing suddenly if the programmer does handle each run time error.
+  - Lack of Garbage Collection: In C programming dynamic memory management is responsibility of the programmer. If the application requests for memory from heap it is responsibility of the programmer to release it at the end of the execution of the program. If memory management is not correctly implemented by a programmer the system may not be able to utilize the resources efficiently and it will result in overall performance degradation of computer system until system restart. 
+
 # Q7
 **Identify TWO ethical issues from the areas below and discuss the extent to which an IT professional is ethically responsible in terms of the issue.**
 
@@ -108,14 +219,20 @@ The internet development started nearly fifty years back with he U.S. military's
 **For each ethical issue identify a source of legal information relating to the ethical issue and discuss whether the law is helpful in assisting a developer to act in an ethical way.**
 
 **Conduct research into a case study of ONE of the ethical issues you have chosen discuss how an ethical IT professional should respond to the case study and how they might mitigate or prevent ethical breaches.	200 - 400 words for each ethical issue**
+---
+dd
 # Q8
 **Explain control flow, using an example from the Ruby programming language	100**
+---
+Control flow is the facility provided by Ruby language to control which part of the code would run based on a specific logical condition.
+
 
 # Q9
 **Explain type coercion	100**
 
 # Q10
 **Describe the data types recognised by the Ruby programming language. In your description you should give example code which uses each data type, and include the name of the Ruby classes which represent each data type.	100**
+---
 
 # Q11
 **Here’s the problem: "There is a restaurant serving a variety of food. The customers want to be able to buy food of their choice. All the staff just quit, how can you build an app to replace them?">**
@@ -144,8 +261,10 @@ arr[i + 1] = arr[i]
 ```
 # Q14
 **Demonstrate your algorithmic thinking through completing the following two tasks, in order:
-i. Create a flowchart to outline the steps for listing all prime numbers between 1 and 100 (inclusive). Your flowchart should make use of standard conventions for flowcharts to indicate processes, tasks, actions, or operations  
-ii. Write pseudocode for the process outlined in your flowchart**
+
+  i. Create a flowchart to outline the steps for listing all prime numbers between 1 and 100 (inclusive). Your flowchart should make use of standard conventions for flowcharts to indicate processes, tasks, actions, or operations
+
+  ii. Write pseudocode for the process outlined in your flowchart**
 # Q15
 **Write pseudocode OR Ruby code for the following problem:**
 
@@ -169,3 +288,75 @@ ii. Write pseudocode for the process outlined in your flowchart**
 a. whether or not they’re allergic to a given item
 
 b. the full list of allergies.
+
+---
+```
+
+allergies = {
+    "1": "eggs",
+    "2": "peanuts",
+    "4": "shellfish",
+    "8": "strawberries",
+    "16": "tomatoes",
+    "32": "chocolate",
+    "64": "pollen",
+    "128": "cats"
+}
+
+def get_name invalid_input=false
+    if invalid_input
+        puts "Did not get your name. Please try again."
+    end
+    print "Please enter your name: "
+    return gets.chomp
+end
+user_name = get_name
+while user_name == ""
+    user_name = get_name true
+end
+
+def allergies_list(allergies, invalid_input=false)
+    if invalid_input
+        puts "Please enter values from given categories only. Please try again."
+    end
+    puts "Which allergy do you want to test for? "
+    puts "Please enter an allergy only from following:  #{allergies.values.map {|a| a.capitalize}.join(", ")}"
+    return gets.chomp
+end
+item = allergies_list(allergies)
+while !(allergies.each_value.map {|a| a.upcase}.include? item.upcase)
+    item = allergies_list(allergies, true)
+end
+
+def input_score invalid_input=false
+    if invalid_input
+        puts "Only Integer values from 0 to 255 are acceptable. Please try again."
+    end
+    puts "Please enter your allergy score (Integer value between 0 and 255 both inclusive): "
+    return gets.chomp.to_i
+end
+score = input_score
+while score < 0 || score > 255
+    score = input_score true
+end
+
+if (score > 0)
+    s = score
+    m = 128
+
+    tested_allergies = []
+    while (m > 0)
+        if (s/m > 0)
+            tested_allergies.push(allergies[m.to_s.to_sym])
+            s = s % m        
+        end
+        m = m/2
+    end
+
+    puts "#{user_name} is tested #{tested_allergies.include?(item) ? 'positive' : 'negative'} for #{item} allergy." 
+
+    puts "#{user_name} is allergic to: #{tested_allergies.map {|t| t != nil ? t.capitalize : nil}.join(", ")}" 
+else
+    puts "#{user_name} is not allergic to anything."
+end
+```
