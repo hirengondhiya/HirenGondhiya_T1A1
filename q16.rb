@@ -22,7 +22,8 @@ allergies = {
     "16": "tomatoes",
     "32": "chocolate",
     "64": "pollen",
-    "128": "cats"
+    "128": "cats",
+    "256": "dogs"
 }
 
 def get_name invalid_input=false
@@ -50,21 +51,24 @@ while !(allergies.each_value.map {|a| a.upcase}.include? item.upcase)
     item = allergies_list(allergies, true)
 end
 
-def input_score invalid_input=false
+def input_score max_score, invalid_input=false
     if invalid_input
-        puts "Only Integer values from 0 to 255 are acceptable. Please try again."
+        puts "Only Integer values from 0 to #{max_score} are acceptable. Please try again."
     end
-    puts "Please enter your allergy score (Integer value between 0 and 255 both inclusive): "
+    puts "Please enter your allergy score (Integer value between 0 and #{max_score} both inclusive): "
     return gets.chomp.to_i
 end
-score = input_score
-while score < 0 || score > 255
+total_score=0
+allergies.keys.each {|k| total_score += k.to_s.to_i}
+score = input_score total_score
+while score < 0 || score > total_score
     score = input_score true
 end
 
 if (score > 0)
     s = score
-    m = 128
+    m = (allergies.keys.map {|k| k.to_s.to_i}.minmax)[1]
+    puts m
 
     tested_allergies = []
     while (m > 0)

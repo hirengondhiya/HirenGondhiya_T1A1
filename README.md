@@ -1,10 +1,17 @@
+**Reword Question** 1, 2, 3, 4, 5, 6
+
+**Work required**
+
+3. (browser answer is not complete it does not speak about points such as request, rendering), 
+4.  Integer is probably not data structure. Try to find difference between data type and data structure.
+
 # Q1	
 **Research the development of the internet from 1980 to today. You must describe at least FIVE key events in the development of the internet. You can refer to events, people of significance, or technologies and how they have changed over time.	300 - 500**
 
 ---
 The internet development started nearly fifty years back with he U.S. military's funding of a research network called Arpanet in 1969. Many of the researchers who worked on ARPANET made significant contributions to the evolution of the Internet, including Leonard Kleinrock, inventor of packet switching (a basic Internet technology). Vinton Cerf and Robert Kahn invented TCP/IP protocol in the 1970s, and in 1972, Ray Tomlinson introduced network email.
 
-- In 1984, the Internet's Domain Name System was created to match complex IP addresses with easy-to-remember names ending in extensions such as .com, .org, .edu, .gov, .mil and country codes including .de for Germany. 
+- In 1984, the Internet's Domain Name System was created to match complex IP addresses with easy-to-remember names ending in extensions such as .com, .org, .edu, .gov, .mil and country codes including for example .de for Germany. 
 
 - In 1989 @The World (http://world.std.com/) became the first commercial Internet Service Provider which provided access to the internet for the general public via dial-up network service.
 
@@ -16,7 +23,7 @@ The internet development started nearly fifty years back with he U.S. military's
 
 - In 1997, the 802.11 standard (the standards that makes WiFi feasible) was established. Vic Hayes has been credited as the "father of Wi-Fi" because he chaired the IEEE committee that created the 802.11 standards. At about the same time, Commonwealth Scientific and Industrial Research Organisation (CSIRO) of Australia invented a chip that greatly improved the signal quality of WiFi. CSIRO credits the following inventors for creating the technology: Dr. John O’Sullivan, Dr. Terry Percival, Mr. Diet Ostry, Mr. Graham Daniels, and Mr. John Deane.
 
-- In 1998, the Internet Protocol version 6 was introduced, to allow for future growth of Internet Addresses. The current most widely used protocol is version 4. IPv4 uses 32-bit addresses allowing for 4.3 billion unique addresses; IPv6, with 128-bit addresses, will allow 3.4 x 1038 unique addresses, or 340 trillion trillion trillion addresses.
+- In 1998, the Internet Protocol version 6 was introduced, to allow for future growth of Internet Addresses. The most widely used protocol is still version 4. IPv4 uses 32-bit addresses allowing for 4.3 billion unique addresses; IPv6, with 128-bit addresses, allows 3.4 x 1038 unique addresses, or 340 trillion trillion trillion addresses.
 # Q2
 **Define the features of the following technologies that are essential in terms of the development of the internet:**
 
@@ -184,8 +191,7 @@ The difference between an interpreter and a compiler is given below:
 # Q6
 **Identify TWO commonly used programming languages and explain the benefits and drawbacks of each.	200 - 400 words on each language**
 ---
-1. C#
-C# is one of the languages supported by Microsoft .NET framework. The C# language is the preferred architecture for backend programming and automation in Windows environments. 
+1. C# is one of the languages supported by Microsoft .NET framework. The C# language is the preferred architecture for backend programming and automation in Windows environments. 
 - Benefits:
   - Its C-style syntax is much more popular with programmers who are used to languages such as Java or C++. Due to this it is very easy to adopt programmers who have experience with other programming languages.
   - It integrates well with Windows. You don't need any special configurations to get a C# program to run in your Windows environment. Whether it's a web application, a Windows service, or a desktop app, C# programs are easily deployed on the network. As long as the target server or workstation supports .NET, your C# program deployment should be a smooth transition from development to production.
@@ -220,24 +226,71 @@ C# is one of the languages supported by Microsoft .NET framework. The C# languag
 
 **Conduct research into a case study of ONE of the ethical issues you have chosen discuss how an ethical IT professional should respond to the case study and how they might mitigate or prevent ethical breaches.	200 - 400 words for each ethical issue**
 ---
-dd
+
 # Q8
 **Explain control flow, using an example from the Ruby programming language	100**
 ---
-Control flow is the facility provided by Ruby language to control which part of the code would run based on a specific logical condition.
+Control flow is one of the feature of the Ruby language to control which part of the code would run based on a specific logical condition.
 
+Control flow structures are required to allow the application to make decisions based different situation.
 
+There are two types of control flow structures
+1. Selection: This kind of control flow structure is used for making decision on executing a specific set of statements  in the given program. It involves evaluating one or several logical expression(s) and then executing a certain branch of code based outcome of evaluation of the logical expression.
+
+    Follwing are selection structures available in Ruby
+    - if / elsif / else
+    - unless / else
+    - case / when / else
+2. Repetition/Loops: This kind of control flow structure is used for performing repeting actions based on a condition. 
+
+    Following are loop structures available in Ruby
+    - while
+    - until
+    - for
+
+For example in Ruby if/elsif/else is used to execute a specific branch of code when a condition is evaluated to be true or false. In an application where task is to find largest of three numbers if/elsif/else can be used as follows.
+```
+number_one = 100
+number_two = 1000
+number_three = 10000
+
+largest_number = 0
+
+if (number_one > number_two && number_one > number_three)
+  largest_number = number_one
+elsif (number_two > number_three)
+  largest_number = number_two
+else
+  largest_number = number_three
+end
+```
 # Q9
 **Explain type coercion	100**
 
+---
+Most of the programming languages support many data types and converting values of a data type to another supported data type. This type conversion is supported mainly in two ways
+1. *Explicit Conversion*: Explicit type conversion occurs when the application contains and explicit instruction to convert data type of a value to another data type. For example in Ruby to_i method is supported by String class to convert string values to Integer. This way of type conversion is called explicit conversion.
+2. *Implicit Conversion/Type Coercion*: In certain situations when the system recognises that the current instruction being executed involves more than one data type and they are compatible with each other then the the system attempts to automatically convert the values of the data type based on rules of programming language. This implicit type conversion is also called **Type Coercion**. 
+
+For example for a division operation in Ruby if one of the operand is a Float value and another is an Integer, the Ruby Interpreter automatically converts the Integer operand to a Float value and then performs the division operation and hence the result of the operation is a Float value.    
+
 # Q10
 **Describe the data types recognised by the Ruby programming language. In your description you should give example code which uses each data type, and include the name of the Ruby classes which represent each data type.	100**
+
 ---
 
+
 # Q11
-**Here’s the problem: "There is a restaurant serving a variety of food. The customers want to be able to buy food of their choice. All the staff just quit, how can you build an app to replace them?">**
+**Here’s the problem: "There is a restaurant serving a variety of food. The customers want to be able to buy food of their choice. All the staff just quit, how can you build an app to replace them?"**
   - Identify the classes you would use to solve the problem
   - Write a short explanation of why you would use the classes you have identified	100
+---
+1. MenuItem: This class can be used for storing details of each item that goes to the menu. The item can have properties such as cousine, price, title, description, image.
+2. Menu: When a customer wants to make an order it can be ordered only from list of dishesh that is served by the restaurent. Menu class can be used to store all the dishes served by the restaurent as a collection of MenuItem objects
+It can have methods such as add Menu Item, remove Menu Item, View All Menu Items, Pick Menu Item etc...
+3. Order: This class can be used for storing collection of Order Details along with Customer Details, order date & time, order number, total amount.
+4. OrderDetail: This class would provide details of each Menu item associated with an order along with quantity, customer comments, price per item, and total price for each line item.
+5. CustomerDetails: This class can be used to record details of the customer such as Name, contact details etc.
 
 # Q12
 **Identify and explain the error in the following code that is preventing correct execution of the program**
@@ -248,6 +301,32 @@ print "The result is: "
 print fahrenheit
 puts "."
 ```
+---
+When above code is executed it gives following error "n `<main>': undefined method `/' for "15\n15\n15\n15\n15\n15\n15\n15\n15\n":String (NoMethodError)"
+
+The reason for above error is that the value stored in celsius variable is a string value instead of an integer or float. The root cause of the issue is when user input is stored in celsius variable through gets method, it is not converted into an integer or a float.
+
+The issue can be resolved by storing user input into a temporary variable say "user_input" and then validating whether the user input is a numerical value then parse the user_input into a float and storing it into celsius variable else dispay an error "Invalid value"
+
+```
+user_input = gets.chomp
+celsius = nil
+
+begin
+    celsius = Float(user_input)
+rescue ArgumentError => e
+    puts "Invalid user input. A numeric value is expected."
+end
+
+if (celsius != nil)    
+    fahrenheit = (celsius * 9 / 5) + 32
+    print "The result is: "
+    print fahrenheit
+    puts "."
+end
+```
+
+
 # Q13
 **The following code looks for the first two elements that are out of order and swaps them; however, it is not producing the correct results. Rewrite the code so that it works correctly.**
 ```
@@ -265,6 +344,23 @@ arr[i + 1] = arr[i]
   i. Create a flowchart to outline the steps for listing all prime numbers between 1 and 100 (inclusive). Your flowchart should make use of standard conventions for flowcharts to indicate processes, tasks, actions, or operations
 
   ii. Write pseudocode for the process outlined in your flowchart**
+
+---
+A. Flow Chart
+![flow chart](./docs/T1A3_Q14.svg)
+
+B. Pseudo Code
+- Initiliaze a variable num to 1
+- For each value of num, perform following steps until num is 101
+  - if num is equal to 1 initialize is_prime to false otherwise true
+  - Initialize a temporary variable t to 2
+  - When t is less than num and is_prime is true perform following steps
+    - Find reminder by dividing num by t
+    - If reminder is zero set is_prime to false
+    - Increment value of t by 1
+  - If value of is_prime is true print num
+  - Increament value of num by 1
+
 # Q15
 **Write pseudocode OR Ruby code for the following problem:**
 
@@ -291,6 +387,21 @@ b. the full list of allergies.
 
 ---
 ```
+# An allergy test produces a single numeric score which contains the information about all the allergies the person has (that they were tested for). The list of items (and their value) that were tested are:
+
+# eggs (1)
+# peanuts (2)
+# shellfish (4)
+# strawberries (8)
+# tomatoes (16)
+# chocolate (32)
+# pollen (64)
+# cats (128) So if Tom is allergic to peanuts and chocolate, he gets a score of 34.
+# Write a program that, given a person’s score can tell them:
+
+# a. whether or not they’re allergic to a given item
+
+# b. the full list of allergies.
 
 allergies = {
     "1": "eggs",
@@ -300,7 +411,8 @@ allergies = {
     "16": "tomatoes",
     "32": "chocolate",
     "64": "pollen",
-    "128": "cats"
+    "128": "cats",
+    "256": "dogs"
 }
 
 def get_name invalid_input=false
@@ -328,21 +440,24 @@ while !(allergies.each_value.map {|a| a.upcase}.include? item.upcase)
     item = allergies_list(allergies, true)
 end
 
-def input_score invalid_input=false
+def input_score max_score, invalid_input=false
     if invalid_input
-        puts "Only Integer values from 0 to 255 are acceptable. Please try again."
+        puts "Only Integer values from 0 to #{max_score} are acceptable. Please try again."
     end
-    puts "Please enter your allergy score (Integer value between 0 and 255 both inclusive): "
+    puts "Please enter your allergy score (Integer value between 0 and #{max_score} both inclusive): "
     return gets.chomp.to_i
 end
-score = input_score
-while score < 0 || score > 255
+total_score=0
+allergies.keys.each {|k| total_score += k.to_s.to_i}
+score = input_score total_score
+while score < 0 || score > total_score
     score = input_score true
 end
 
 if (score > 0)
     s = score
-    m = 128
+    m = (allergies.keys.map {|k| k.to_s.to_i}.minmax)[1]
+    puts m
 
     tested_allergies = []
     while (m > 0)
