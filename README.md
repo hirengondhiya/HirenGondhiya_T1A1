@@ -329,6 +329,8 @@ end
 
 # Q13
 **The following code looks for the first two elements that are out of order and swaps them; however, it is not producing the correct results. Rewrite the code so that it works correctly.**
+
+---
 ```
 arr = [5, 22, 29, 39, 19, 51, 78, 96, 84]
 i = 0
