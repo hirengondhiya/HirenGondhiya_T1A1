@@ -7,10 +7,7 @@
 5. table is not working properly
 
 Not started
-7, 10,13
-
-explanation required
-q13
+7, 10
 
 # Q1	
 **Research the development of the internet from 1980 to today. You must describe at least FIVE key events in the development of the internet. You can refer to events, people of significance, or technologies and how they have changed over time.	300 - 500**
@@ -285,7 +282,81 @@ For example for a division operation in Ruby if one of the operand is a Float va
 **Describe the data types recognised by the Ruby programming language. In your description you should give example code which uses each data type, and include the name of the Ruby classes which represent each data type.	100**
 
 ---
+Ruby mainly recognizes following data types
+1. Numbers
+This data types is used for storing numeric data into the variables.
+There are two types of Numbers supported by Ruby
 
+    - Integer: This data type is used to store whole numbers only. An integer value represented by **Integer** class in ruby.
+ 
+      for example following ruby code creates an Integer variable
+
+      ```
+      int_value = 1
+      ```
+    - Float: This data type is used to store decimal numbers. A decimal value is represented by **Float** clas in Ruby.
+
+      for example following ruby code creates a Float varible
+
+      ```
+      float_value = 1.0
+      ```
+2. Boolean:
+Boolean type can have one two possible values true or false. A **true** value is represented by **TrueClass** and a **false** value is represented by **FalseClass** in Ruby.
+
+    For example following Ruby code creates a variable of type TrueClass
+    ```
+    boolean_value = true
+    ```
+
+3. Strings:
+In Ruby a string is a sequence of characters enclosed within quotes (**'**) or double quotes (**"**). They are represented by **String** class in Ruby. String values are very useful for giving feedback from application to the user.
+
+    For example following Ruby code prints a string message on user screen to input a integer value.
+
+    ```
+    puts "Please enter a Integer value"
+    ```
+4. Hashes:
+In ruby a Hash is a collection of key and value pairs. The values stored in this type of collection can be retrieved by the key associated with the collection. Hashes are represented by the Ruby class **Hash**.
+
+    A Hash is declared by enclosing key value pair between curly braces and key-value pairs can be declared by 
+    placing key and value seperated by a double arrow 
+
+    **{ key => value }**
+
+    The key in key-value pair can be of data type String or Symbol. Whereas the value in the pair can be of any type of objects allowed in Ruby.
+
+    For example below code produces a Hash with key as name of the food item and associated string value as the category.
+
+    ```
+    foods = {
+      "Lettuce" => "Vegetables",
+      "Apples" => "Fruits",
+      "Almond" => "Nuts",
+      "Mutton" => "Meats",
+      "Tuna" => "Fish"
+    }
+    ``` 
+5. Arrays
+In Ruby array is nothing but list of values. The values can be any object of allowed types in Ruby. An array is represented by the Ruby class **Array**.
+
+    An array can be declared by enclosing comma seperated list of values between square brackets **[ value1, value2, value3, ... ]** The values in an array can be retrieved using its position in the list. The position or array items is called **Index** which start from 0.
+
+    For example following Ruby code creates an array of string representing movies and print the first item in movies array ("Star wars").
+
+    ```
+    movies = ["Star wars", "The Dark Knight", "The Godfather", "Titanic", "Gladiator"]
+    p movies[0]
+    ```
+6. Symbols:
+In ruby strings can be stored at a unique location using Symbols. Symbols are light weight way of represting and storing strings at a unique location. Once a symbol is created they are always retrieved from the same memory location everytime the symbol referenced next time in the application. The symbol values are represented by **Symbol** class.
+
+    A symbol can be created by prefixing colon **:** in front of any string but without quotes. For example below Ruby code generates a Symbol **Gladiator** and stores into a variable movie_name
+
+    ```
+    movie_name = :Gladiator
+    ```
 
 # Q11
 **Here’s the problem: "There is a restaurant serving a variety of food. The customers want to be able to buy food of their choice. All the staff just quit, how can you build an app to replace them?"**
