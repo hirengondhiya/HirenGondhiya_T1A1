@@ -4,6 +4,13 @@
 
 3. (browser answer is not complete it does not speak about points such as request, rendering), 
 4.  Integer is probably not data structure. Try to find difference between data type and data structure.
+5. table is not working properly
+
+Not started
+7, 10,13
+
+explanation required
+q13
 
 # Q1	
 **Research the development of the internet from 1980 to today. You must describe at least FIVE key events in the development of the internet. You can refer to events, people of significance, or technologies and how they have changed over time.	300 - 500**
@@ -341,6 +348,25 @@ arr[i + 1] = arr[i]
 ```
 
 ---
+```
+arr = [5, 22, 29, 39, 19, 51, 78, 96, 84]
+i = 0
+while (i < arr.size - 1 and arr[i] < arr[i + 1])
+  i = i + 1 
+end
+puts i
+
+# first store arr[i] in to a temporary variable
+temp = arr[i]
+
+# swap  arr[i] with arr[i+1]
+arr[i] = arr[i + 1]
+
+# place original value of arr[i] that was stored in temp into arr[i+1]
+arr[i + 1] = temp
+
+p arr
+```
 
 # Q14
 **Demonstrate your algorithmic thinking through completing the following two tasks, in order:
