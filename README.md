@@ -7,7 +7,7 @@
 5. table is not working properly
 
 Not started
-7, 10
+7
 
 # Q1	
 **Research the development of the internet from 1980 to today. You must describe at least FIVE key events in the development of the internet. You can refer to events, people of significance, or technologies and how they have changed over time.	300 - 500**
