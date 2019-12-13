@@ -30,26 +30,23 @@ The information mentioned above is mainly aquired from following sources
   - IP addresses (IPv4 and IPv6)
   - routers and routing
   - domains and DNS
+
+
+**Explain how each technology has contributed to the development of the internet.	50 - 100 words per dot point**
 ---
   1. _**Packets**_
-    Everything we do on the interent involves packets. All information sent over internet is broken into small pieces and then sent across the internet as a series of "Packets". A packet is nothing but small part of the information sent from a device to another over the internet. Networks that ship data around in small packets are called **packet switched networks**.
+    The information that is sent over the Internet is sent in form of Packets. Packets are nothing but small pieces of information that is created by breaking the message that is being communicated. The network that send information in form of packets are called **packet switched networks**.
 
-  Each packet carries the information that will help it get to its destination. Most network packets are split into three parts as described below:
+    Each Packet contains small part of the message and metadata about the message that helps the message to be delivered and rebuilt at the destination. Most network packets are split into three parts as described below:
     ![Packet Structure](./docs/q2-packet-structure.gif)
     
 *Image source: https://computer.howstuffworks.com/question5251.htm*
     
   - **Header** 
-  The header describes the information that is being carried by the packet. The description may include:
-      - *Length of packet* Some of the networks have fixed sized packets whereas others use variable size packets. In case of variably sized packets the length information allows recipient to verify full receipt of the packet.
-      - *Synchronization* Synchronization information is used to make sure that packet is transferred accurately.
-      - *Packet number* As mentioned earlier information is transferred over networs as sequence of packets. Packet number help to identify and reconstruct the message in correct sequence.
-      - *Protocol* On networks such as Internet that carry multiple types of information, the protocol defines what type of packet is being transmitted: e-mail, Web page, streaming video.
-      - *Destination address* The IP address of the device or system for which information is addressed.
-      - *Originating address* The IP address of the device or system which sent the message.
+  The header describes the information that is being carried by the packet. 
   - **Payload** - The payload is actual small peice of the message that is being carried from sender to the receiver. It is also called the body or data of a packet.
 
-  - **Trailer** - The trailer is used to indicated end of the message in a packet. Sometimes it may also be used for error checking. 
+  - **Trailer** - The trailer is used to indicate end of the message in a packet. Sometimes it may also be used for error checking. 
 
 2. _**IP addresses (IPv4 and IPv6)**_ An Internet Protocol address (IP address) is a logical numeric address that is assigned to every single computer, printer, switch, router or any other device that is part of a TCP/IP-based network. It is used to uniquely identify every node in the network.
 
@@ -83,8 +80,6 @@ The information mentioned above is mainly aquired from following sources
   - The *Domain Name System (DNS)* translates internet domains and hostnames to IP addresses and vice versa. On the internet, DNS automatically converts between the names typed in the address bar of a web browser to the IP addresses of web servers hosting those sites. Larger corporations use DNS to manage a company intranet. Home networks use DNS to access the internet but do not use it to manage the names of home computers.
 
     DNS is a client/server network communication system. DNS clients send requests to and receive responses from DNS servers. Requests containing a name that results in an IP address being returned from the server are called forward DNS lookups. Requests that contain an IP address and result in a name, called reverse DNS lookups, are also supported. DNS implements a distributed database to store this name and last-known address information for all public hosts on the internet.
-
-**Explain how each technology has contributed to the development of the internet.	50 - 100 words per dot point**
 # Q3
 **Define the features of the following technologies that are essential in terms of the development of the internet:**
   - TCP
