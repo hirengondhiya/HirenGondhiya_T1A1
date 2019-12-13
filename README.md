@@ -2,15 +2,15 @@
 **Research the development of the internet from 1980 to today. You must describe at least FIVE key events in the development of the internet. You can refer to events, people of significance, or technologies and how they have changed over time.	300 - 500**
 
 ---
-The internet development started nearly fifty years back with he U.S. military's funding of a research network called Arpanet in 1969. Many of the researchers who worked on ARPANET made significant contributions to the evolution of the Internet, including Leonard Kleinrock, inventor of packet switching (a basic Internet technology). Vinton Cerf and Robert Kahn invented TCP/IP protocol in the 1970s, and in 1972, Ray Tomlinson introduced network email.
+The internet development started nearly fifty years back. In 1969 US military funded a research network called ARPANET. Many of the researchers who were involved in development of ARPANET, were later involved in development of the other technologies that lead to the evolution of the Internet. For example: Leonard Kleinrock, invented packet switching for passing messages between network devices. Vinton Cerf and Robert Kahn built TCP/IP protocol which is the major protocal for handling network traffic across Internet and, Ray Tomlinson built network email technology.
 
-- In 1984, the Internet's Domain Name System was created to match complex IP addresses with easy-to-remember names ending in extensions such as .com, .org, .edu, .gov, .mil and country codes including for example .de for Germany. 
+- 1984, the Internet's Domain Name System was created to match complex IP addresses with easy-to-remember names ending in extensions such as .com, .org, .edu, .gov, .mil and country codes including for example .de for Germany. 
 
-- In 1989 @The World (http://world.std.com/) became the first commercial Internet Service Provider which provided access to the internet for the general public via dial-up network service.
+- 1989, @The World (http://world.std.com/) became the first commercial Internet Service Provider which provided access to the internet for the general public via dial-up network service.
 
-- In 1990, Tim Berners-Lee invented the World Wide Web as a method of publishing information in a hypertext format on the Internet. 
+- 1990, Tim Berners-Lee created the World Wide Web which used HTML format to publish the information on the Internet. 
 
-- In 1993, computer science student Marc Andreessen created the first popular Web browser, known as Mosaic. The Mosaic browser contributed to very fast spread of the World Wide Web. Since then the number of Web sites and Web pages has exploded.
+- In 1993, computer science student Marc Andreessen created the first popular Web browser, known as Mosaic. The Mosaic browser contributed to very fast spread of the World Wide Web. After introduction of the Mosaic browser the number of the pages and the websites hosted on internet increased manifold.
 
 - By 1987, the number of hosts on internet exceeded 20,000 nodes at the same time Cisco shipped it's first router.
 
