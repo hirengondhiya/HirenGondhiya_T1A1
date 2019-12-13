@@ -14,9 +14,15 @@ The internet development started nearly fifty years back. In 1969 US military fu
 
 - By 1987, the number of hosts on internet exceeded 20,000 nodes at the same time Cisco shipped it's first router.
 
-- In 1997, the 802.11 standard (the standards that makes WiFi feasible) was established. Vic Hayes has been attributed as the "father of Wi-Fi" as a result of him chairing the IEEE committee that was involved in creating the 802.11 standards. At about the same time, Commonwealth Scientific and Industrial Research Organisation (CSIRO) of Australia invented a chip that greatly improved the signal quality of WiFi. CSIRO credits the following inventors for creating the technology: Dr. John O’Sullivan, Dr. Terry Percival, Mr. Diet Ostry, Mr. Graham Daniels, and Mr. John Deane.
+- In 1997, the 802.11 standard (the standards that makes WiFi feasible) was established. Vic Hayes has been attributed as the "father of Wi-Fi" as a result of him chairing the IEEE committee that was involved in creating the 802.11 standards. At about the same time, Commonwealth Scientific and Industrial Research Organisation (CSIRO) of Australia invented a chip that vastly improved the quality of the WiFi signal. CSIRO attributed Dr. John O’Sullivan, Dr. Terry Percival, Mr. Diet Ostry, Mr. Graham Daniels, and Mr. John Deane for invention of the technology: .
 
 - In 1998, the Internet Protocol version 6 was introduced, to allow for future growth of Internet Addresses. The most widely used protocol is still version 4. IPv4 uses 32-bit addresses that provides about 4.3 billion unique addresses whereas IPv6, with 128-bit addresses, creates 3.4 x 1038 distinct addresses, or 340 trillion trillion trillion addresses.
+
+The information mentioned above is mainly aquired from following sources
+(en.wikipedia.org)[https://en.wikipedia.org/wiki/Wi-Fi]
+(thoughtco.com)[https://www.thoughtco.com/who-invented-wifi-1992663]
+(livescience.com)[https://www.livescience.com/20727-internet-history.html]
+
 # Q2
 **Define the features of the following technologies that are essential in terms of the development of the internet:**
 
