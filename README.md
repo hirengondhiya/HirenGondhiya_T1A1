@@ -37,10 +37,11 @@ The information mentioned above is mainly aquired from following sources
   1. _**Packets**_
     The information that is sent over the Internet is sent in form of Packets. Packets are nothing but small pieces of information that is created by breaking the message that is being communicated. The network that send information in form of packets are called **packet switched networks**.
 
-    Each Packet contains small part of the message and metadata about the message that helps the message to be delivered and rebuilt at the destination. Most network packets are split into three parts as described below:
-    ![Packet Structure](./docs/q2-packet-structure.gif)
+      Each Packet contains small part of the message and metadata about the message that helps the message to be delivered and rebuilt at the destination. Most network packets are split into three parts as described below:
+
+      ![Packet Structure](./docs/q2-packet-structure.gif)
     
-*Image source: https://computer.howstuffworks.com/question5251.htm*
+    *Image source*: https://computer.howstuffworks.com/question5251.htm
     
   - **Header** 
   The header describes the information that is being carried by the packet. 
