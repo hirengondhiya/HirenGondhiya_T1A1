@@ -1,14 +1,3 @@
-**Reword Question** 1, 2, 3, 4, 5, 6
-
-**Work required**
-
-3. (browser answer is not complete it does not speak about points such as request, rendering), 
-4.  Integer is probably not data structure. Try to find difference between data type and data structure.
-5. table is not working properly
-
-Not started
-7
-
 # Q1	
 **Research the development of the internet from 1980 to today. You must describe at least FIVE key events in the development of the internet. You can refer to events, people of significance, or technologies and how they have changed over time.	300 - 500**
 
@@ -44,20 +33,21 @@ The internet development started nearly fifty years back with he U.S. military's
     
 *Image source: https://computer.howstuffworks.com/question5251.htm*
     
-  - **Header** The header contains instructions about the data carried by the packet. These instructions may include:
-      - *Length of packet* (some networks have fixed-length packets, while others rely on the header to contain this information)
-      - *Synchronization* (a few bits that help the packet match up to the network)
-      - *Packet number* (which packet this is in a sequence of packets)
-      - *Protocol* (on networks that carry multiple types of information, the protocol defines what type of packet is being transmitted: e-mail, Web page, streaming video)
-      - *Destination address* (where the packet is going)
-      - *Originating address* (where the packet came from)
-  - **Payload** - Also called the body or data of a packet. This is the actual data that the packet is delivering to the destination. If a packet is fixed-length, then the payload may be padded with blank information to make it the right size.
+  - **Header** 
+  The header describes the information that is being carried by the packet. The description may include:
+      - *Length of packet* Some of the networks have fixed sized packets whereas others use variable size packets. In case of variably sized packets the length information allows recipient to verify full receipt of the packet.
+      - *Synchronization* Synchronization information is used to make sure that packet is transferred accurately.
+      - *Packet number* As mentioned earlier information is transferred over networs as sequence of packets. Packet number help to identify and reconstruct the message in correct sequence.
+      - *Protocol* On networks such as Internet that carry multiple types of information, the protocol defines what type of packet is being transmitted: e-mail, Web page, streaming video.
+      - *Destination address* The IP address of the device or system for which information is addressed.
+      - *Originating address* The IP address of the device or system which sent the message.
+  - **Payload** - The payload is actual small peice of the message that is being carried from sender to the receiver. It is also called the body or data of a packet.
 
-  - **Trailer** - The trailer, sometimes called the footer, typically contains a couple of bits that tell the receiving device that it has reached the end of the packet. It may also have some type of error checking. The most common error checking used in packets is *Cyclic Redundancy Check (CRC)*. CRC is pretty neat. Here is how it works in certain computer networks: It takes the sum of all the 1s in the payload and adds them together. The result is stored as a hexadecimal value in the trailer. The receiving device adds up the 1s in the payload and compares the result to the value stored in the trailer. If the values match, the packet is good. But if the values do not match, the receiving device sends a request to the originating device to resend the packet.
+  - **Trailer** - The trailer is used to indicated end of the message in a packet. Sometimes it may also be used for error checking. 
 
 2. _**IP addresses (IPv4 and IPv6)**_ An Internet Protocol address (IP address) is a logical numeric address that is assigned to every single computer, printer, switch, router or any other device that is part of a TCP/IP-based network. It is used to uniquely identify every node in the network.
 
-    Two versions of the Internet Protocol are in common use in the Internet today. The original version of the Internet Protocol that was first deployed in 1983 in the ARPANET, the predecessor of the Internet, is Internet Protocol version 4 (IPv4). The rapid exhaustion of IPv4 address space available for assignment to Internet service providers and end user organizations by the early 1990s, prompted the **Internet Engineering Task Force (IETF)** to explore new technologies to expand the addressing capability in the Internet. The result was a redesign of the Internet Protocol which became eventually known as Internet Protocol Version 6 (IPv6) in 1995.IPv6 technology was in various testing stages until the mid-2000s, when commercial production deployment commenced.
+    There are two versions of the Internet Protocol that are in common use in the Internet today. The original version of the Internet Protocol that was first used in 1983, that is Internet Protocol version 4 (IPv4). The rapid expansion of internet lead to exhaustion of IPv4 address space available for assignment to Internet service providers and end user organizations, and that lead the **Internet Engineering Task Force (IETF)** to explore new solutions to create larger address space capability in the Internet. The result was a redesign of the Internet Protocol which became eventually known as Internet Protocol Version 6 (IPv6) in 1995. 
 
 - *IPv4 addresses*
   The traditional IP Address (known as IPv4) uses a 32-bit number to represent an IP address. An IP address is written in "dotted decimal" notation, which is 4 sets of numbers separated by period each set representing 8-bit number ranging from (0-255). An example of IPv4 address is 216.3.128.12.
@@ -101,9 +91,7 @@ The internet development started nearly fifty years back with he U.S. military's
 **Explain how each technology has contributed to the development of client and server communication over the internet	50 - 150 words for each technology**
 
 ---
-  1. Its features essential in development of internet
-  2. How it contributed to the development of client and server communication.
-
+  
 - TCP
     
     Transmission control protocol (TCP) is a network communication protocol designed to send data packets over the Internet.
@@ -135,13 +123,12 @@ The internet development started nearly fifty years back with he U.S. military's
 
 - web browsers (requests, rendering and developer tools)
 
-  A web browser is a software program that allows a user to locate, access, and display web pages. Browsers are used primarily for displaying and accessing websites on the internet, as well as other content created using languages such as Hypertext Markup Language (HTML) and Extensible Markup Language (XML).
+  A web browser is a software program that allows a user to locate, access, and display web pages. Browsers are used primarily for displaying and accessing websites on the internet.
 
-  A variety of web browsers are available with different features, and are designed to run on different operating systems. Common browsers include Internet Explorer from Microsoft, Firefox from Mozilla, Google Chrome, Safari from Apple, and Opera. All major browsers have mobile versions that are lightweight versions for accessing the web on mobile devices.
+  The web browser displays a website by sending request the web server that is hosting the website in response the web server sends the page requested in by the browser. The page is sent in form of HTML markup which is then interpreted and rendered by the browser. 
 
-  Web browsers date back to the late 1980s when an English scientist, Tim Berners-Lee, first developed the ideas that led to the World Wide Web (WWW). This consisted of a series of pages created using the HTML language and joined or linked together with pointers called hyperlinks.
+  Most of the modern browser comes with capability to debug the rendering of web page this is in form of developer tools. The developer tools can be used by developers to debug the issues with HTML, CSS or javascript associated with the page.
 
-  Mosaic was one of the first browser built by Marc Andreesen in 1993.
 # Q4
 **Identify THREE data structures used in the Ruby programming language and explain the reasons for using each.	50 - 100 words on each data structure**
 ---
@@ -161,13 +148,15 @@ The internet development started nearly fifty years back with he U.S. military's
     The order in which you traverse a hash by either key or value may seem arbitrary and will generally not be in the insertion order. If you attempt to access a hash with a key that does not exist, the method will return nil.
 
     The hashes are mainly used to retrieve the values associated with a key without traversing through entire collection.
-3. Integer:
+
+3. Stacks:
     
-    Ruby supports integer numbers. An integer number can range from -230 to 230-1 or -262 to 262-1. Integers within this range are objects of class Fixnum and integers outside this range are stored in objects of class Bignum.
+    A Stack is a form Last In First Out (LIFO) storage. It is similar to stack of plates, the one that is put on top is the last one to be placed but the first one to be used. 
 
-    You write integers using an optional leading sign, an optional base indicator (0 for octal, 0x for hex, or 0b for binary), followed by a string of digits in the appropriate base. Underscore characters are ignored in the digit string.
+    Stacks has many practical applications. In system programming they are used to keep track of function calls. When the function calls another functions stack helps to establish which function needs to be executed first to complete execution of the caller.
 
-    You can also get the integer value, corresponding to an ASCII character or escape the sequence by preceding it with a question mark.
+    In Ruby stack can be easily implemented using arrays and push and pop methods. Array is acts as list of items. Push is used to add items at the end of the list and Pop is used to remove item from end of the list.
+    
 
 # Q5
 **Describe the features of interpreters and compilers and how they are different.	100 - 200 words on each way code is executed.**
@@ -229,11 +218,42 @@ The difference between an interpreter and a compiler is given below:
 **For each ethical issue identify a source of legal information relating to the ethical issue and discuss whether the law is helpful in assisting a developer to act in an ethical way.**
 
 **Conduct research into a case study of ONE of the ethical issues you have chosen discuss how an ethical IT professional should respond to the case study and how they might mitigate or prevent ethical breaches.	200 - 400 words for each ethical issue**
+
 ---
+1. Access to a user's personal information
+
+    In information edge IT professionals collectively can and does have access to user's personal information in ways general masses are not even aware of. For example we as a user of social media hand out a lot of personal information such as Birth Dates, Legal Names, Phone Numbers to companies that generally we do not want people around us to know. This information can be used by the companies to formulate patterns of preferences for individuals and then use this patterns to influence spending behaviour.
+
+    Many of us might have recognized that as soon as we search for phrases on internet for some information for example a tech tutorial and then when viewing videos through one of the free video streaming platform and we start getting ads for a popular online tech training platform. If the same thing would have been done by a co-worker who overheard the conversation that a colleague planning to buy a product and then another co-worker advising a specific brand without aknowledging that s/he has commercial interest in that brand it would have been described as unethical however the same pattern is being exhibited by tech companies by presenting advertisements of products matching the keywords that a user searched for in recent future.
+
+    As an IT professional one is ethically responsible to look at the personal data of users and use it for personal gains. However they cannot be responsible for crafting parts of the algorithms that are used by companies to analyse user data and use it or sell it for profits. 
+
+2. Freedom of thought, conscience, speech and the media
+
+    In today's social media age people share their views more openly believing they can remain annonymous even if their views does not confirm to the majority views. Feeling of being annonymous encourages individuals to express ideas or opinions without being judged by the people around them. 
+
+    Freedom of thought is not interpreted by different societies and regimes in different ways. For example, speaking against government policies can be termed as "Acting against national interest" in some part of the world or as "Holding government executives accountable" in another.
+
+    This leads to ethical dielema for IT professionals specially when views are contradictory that of individuals compared to that of the other culture.
+
+    **Case study: Freedom of thought, conscience, speech and the media**
+
+    The article referred to here is about [Google Employees Protest Secret Work on Censored Search Engine for China](https://www.nytimes.com/2018/08/16/technology/google-employees-protest-search-censored-china.html)
+
+    This article discusses about internal dissent of google employees about reports of Google secretly building a censored search engine for China. The employees being worried about they might be part of the product which does not follow their concience and demanding the company to be more transparent about what repurcussions of the project they are working on on larger context.
+
+    It also discusses about how Google's outspoken workforce has made the company change their strategy and not renew contract with Pentagon for AI based weaponery improvement program.
+
+    Therefore, as an IT professional we should also remember the fact that before being an IT perons we are human beings and the idea of freedom of thought and conscience is not limited in personal context but it is part of professional context as well.
+
+
+
 
 # Q8
 **Explain control flow, using an example from the Ruby programming language	100**
+
 ---
+
 Control flow is one of the feature of the Ruby language to control which part of the code would run based on a specific logical condition.
 
 Control flow structures are required to allow the application to make decisions based different situation.
