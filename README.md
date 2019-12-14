@@ -117,31 +117,51 @@ question525.htm)
 
 # Q4
 **Identify THREE data structures used in the Ruby programming language and explain the reasons for using each.	50 - 100 words on each data structure**
+
 ---
 1. Arrays:
 
-    Ruby arrays are ordered, integer-indexed collections of any object. Each element in an array is associated with and referred to by an index.
+    An array is an ordered list of items that can be accessed by using an integer index. Ruby arrays are represented by enclosing a comma-separated list of items within square brackets. The first item in the ruby array can be accesed using index 0 (zero), 2nd item with index 1 (one) and so on.
 
-    Array indexing starts at 0, as in C or Java. A negative index is assumed relative to the end of the array --- that is, an index of -1 indicates the last element of the array, -2 is the next to last element in the array, and so on.
+    For example, the following Ruby code snippet declares an array called vegetables and then retrieves the first element of array "Lettuce" using index zero.
 
-    Ruby arrays can hold objects such as String, Integer, Fixnum, Hash, Symbol, even other Array objects. Ruby arrays are not as rigid as arrays in other languages. Ruby arrays grow automatically while adding elements to them.
+    ```
+    vegetables = [ "Lettuce", "artichoke", "eggplant", "broccoli", "cabbage" ]
 
-    Arrays are generally used to store list of data into a program.
+    puts vegetables[0]
+    ```
+
+    In Ruby language, an array can hold objects of any inbuilt class within Ruby as well as objects of the user-defined classes. Unlike C, the objects of different kinds of classes can be put into the same array.
+
+    Arrays are generally used to store a list of data into a program.
+
 2. Hash:
     
-    A Hash is a collection of key-value pairs like this: "employee" = > "salary". It is similar to an Array, except that indexing is done via arbitrary keys of any object type, not an integer index.
+    A Hash is a dictionary-like data structure that can be used to store list of key-value pairs and then values can be referenced by using keys. Like a dictionary, each key in a Hash must be unique to facilitate non-ambigous retrieval of the value associated with each key.
 
-    The order in which you traverse a hash by either key or value may seem arbitrary and will generally not be in the insertion order. If you attempt to access a hash with a key that does not exist, the method will return nil.
+    Ruby uses double arrow (=>) notation to represent key value pair and the Hash is represented by enclosing a comma-separated list of key-value pairs within curly braces.
 
-    The hashes are mainly used to retrieve the values associated with a key without traversing through entire collection.
+    For example, below Ruby code snippet declares a Hash Food items with category of the item as key and name of the item as value.
+
+    ```
+    foods = {
+      "Lettuce" => "Vegetables",
+      "Apples" => "Fruits",
+      "Almond" => "Nuts",
+      "Mutton" => "Meats",
+      "Tuna" => "Fish"
+    }
+    ``` 
+    
+    The hashes are mainly used to retrieve the values associated with a key without traversing through the entire collection.
 
 3. Stacks:
     
-    A Stack is a form Last In First Out (LIFO) storage. It is similar to stack of plates, the one that is put on top is the last one to be placed but the first one to be used. 
+    A Stack is a form Last In First Out (LIFO) storage. It is similar to a stack of plates, the one that is put on top is the last one to be placed but the first one to be used. 
 
-    Stacks has many practical applications. In system programming they are used to keep track of function calls. When the function calls another functions stack helps to establish which function needs to be executed first to complete execution of the caller.
+    Stacks has many practical applications. In systems programming, they are used to keep track of function calls. When a function calls multiple functions and then, in turn, those functions call another set of functions, the stack can be used to keep track of where to return the control after the execution of each function.
 
-    In Ruby stack can be easily implemented using arrays and push and pop methods. Array is acts as list of items. Push is used to add items at the end of the list and Pop is used to remove item from end of the list.
+    In Ruby stack can be easily implemented using arrays and push and pop methods. An Array acts as a list of items. Push is used to add items at the end of the list and Pop is used to remove the item from the end of the list.
     
 
 # Q5
