@@ -97,24 +97,16 @@ question525.htm)
     The way TCP works is that it first establishes a network path between the sender and the receiver, and then it makes sure that the link between the sender and receiver of the message is maintained until all the messages are exchanged. TCP breaks each message into small chunks, also called packets and then sends the chunks over the physical link as a sequence of packets, and finally, it reassembles the packets into a message at the destination. TCP also implements methods to make sure that the integrity of individual packets is maintained and the message reconstituted at the destination is exactly the same as it was originated at the source.
 
 - HTTP and HTTPS
+
+    **Hypertext Transport Protocol** commonly known as **HTTP** is an Application Layer protocol, in the OSI layer model, that dictates the rules for communication between the web server and the web client on Word Wide Web. In short, it is a set of rules that are laid out for smooth transfer of web pages over the internet. It acts as a channel that aids in the transmission of data between a web client and the webserver.
   
-    HTTP and HTTPS are both responsible for providing a channel where data can be transmitted between a user's device and a web server so that normal web browsing functions can take place.
-
-    HTTP stands for HyperText Transfer Protocol, and it's the network protocol used by the World Wide Web that lets you open web page links and jumps from one page to the next across search engines and other websites.
-
-    When a web page that uses HTTP is requested by a user, the web browser uses the HyperText Transfer Protocol (over port 80) to request the page from the webserver. When the webserver receives and accepts the request, it uses the same protocol to send the page back to the client.
-
-    This protocol is the foundation for large, multi-functioning, multi-input systems — like the web. The web as we know it wouldn't function without this bedrock of communication processes, as links rely on HTTP in order to work properly.
-
-  However, HTTP sends and receives data in plaintext. This means that when browsing a website that uses HTTP, anyone listening in on the network can see everything that's being communicated between the client browser and the server. This includes passwords, messages, files, etc.
-
-  HTTPS is very similar to HTTP, with the key difference being that it is secure, which is what the **s** at the end of HTTPS stands for.
-
-  HyperText Transfer Protocol Secure uses a protocol called SSL (Secure Sockets Layer) or TLS (Transport Layer Security), which essentially wraps the data between the client browser and the server in a secure, encrypted tunnel over port 443. This makes it much harder for packet sniffers to decipher, unlike HTTP.
-
-  TLS and SSL are especially useful when shopping online to keep financial data secure, but is also used on any website that requires sensitive data (e.g., passwords, personal information, payment details).
-
-  Another benefit of HTTPS over HTTP is that it's much faster, meaning that web pages load quicker over HTTPS. The reason for this is because HTTPS is already understood to be secure, so no scanning or filtering of data has to take place, resulting in less data being transferred and ultimately quicker transfer times.
+  One of the main drawbacks of HTTP is that it is not secure because it communicates information in form of plain text which when passing through the internet can be easily snooped and altered by the nodes on the network responsible for passing the message between the client and the server.
+  
+  To overcome this drawback HTTPS was developed which uses encryption protocols along with HTTP to make the communication secure. There are mainly one of the two protocols that are used by HTTPs
+    -  SSL (Secure Sockets Layer) or
+    - TLS (Transport Layer Security)
+  
+  The main benefit of HTTPS over HTTP is that it facilitates communication of sensitive data over the internet. However another added advantage of HTTPS over HTTP is that it eliminates the need for scanning and filtering of the data and hence the information can be transferred much quicker.
 
 
 - web browsers (requests, rendering and developer tools)
