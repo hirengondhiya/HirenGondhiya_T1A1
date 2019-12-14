@@ -259,12 +259,12 @@ The table below describes the major difference between a compiler and an interpr
 
 ---
 
-Control flow is one of the feature of the Ruby language to control which part of the code would run based on a specific logical condition.
+Control flow is one of the features of the Ruby language to control which part of the code would run based on a specific logical condition.
 
-Control flow structures are required to allow the application to make decisions based different situation.
+Control flow structures are required to allow the application to make decisions based on different situation.
 
 There are two types of control flow structures
-1. Selection: This kind of control flow structure is used for making decision on executing a specific set of statements  in the given program. It involves evaluating one or several logical expression(s) and then executing a certain branch of code based outcome of evaluation of the logical expression.
+1. Selection: This kind of control flow structure is used for making the decision on executing a specific set of statements  in the given program. It involves evaluating one or several logical expression(s) and then executing a certain branch of code based outcome of evaluation of the logical expression.
 
     Follwing are selection structures available in Ruby
     - if / elsif / else
@@ -277,7 +277,7 @@ There are two types of control flow structures
     - until
     - for
 
-For example in Ruby if/elsif/else is used to execute a specific branch of code when a condition is evaluated to be true or false. In an application where task is to find largest of three numbers if/elsif/else can be used as follows.
+For example, in Ruby, if/elsif/else is used to execute a specific branch of code when a condition is evaluated to be true or false. In an application where the task is to find the largest of three numbers if/elsif/else can be used as follows.
 ```
 number_one = 100
 number_two = 1000
@@ -297,62 +297,64 @@ end
 **Explain type coercion	100**
 
 ---
-Most of the programming languages support many data types and converting values of a data type to another supported data type. This type conversion is supported mainly in two ways
-1. *Explicit Conversion*: Explicit type conversion occurs when the application contains and explicit instruction to convert data type of a value to another data type. For example in Ruby to_i method is supported by String class to convert string values to Integer. This way of type conversion is called explicit conversion.
-2. *Implicit Conversion/Type Coercion*: In certain situations when the system recognises that the current instruction being executed involves more than one data type and they are compatible with each other then the the system attempts to automatically convert the values of the data type based on rules of programming language. This implicit type conversion is also called **Type Coercion**. 
+Most of the programming languages support many data types and converting the values of a data type to another supported data type. This type of conversion is supported mainly in two ways
 
-For example for a division operation in Ruby if one of the operand is a Float value and another is an Integer, the Ruby Interpreter automatically converts the Integer operand to a Float value and then performs the division operation and hence the result of the operation is a Float value.    
+1. *Explicit Conversion*: Explicit type conversion occurs when the application contains and explicit instruction to convert data type of value to another data type. For example in Ruby to_i method is supported by the String class to convert string values to Integer. This way of type conversion is called explicit conversion.
+2. *Implicit Conversion/Type Coercion*: In certain situations when the system recognizes that the current instruction being executed involves more than one data type and they are compatible with each other then the system attempts to automatically convert the values of the data type based on on rules of programming language. This implicit type conversion is also called **Type Coercion**.
+For example for a division operation in Ruby, if one of the operands is a Float value and another is an Integer, the Ruby Interpreter automatically converts the Integer operand to a Float value and then performs the division operation and hence the result of the operation is a Float value.   
 
 # Q10
 **Describe the data types recognised by the Ruby programming language. In your description you should give example code which uses each data type, and include the name of the Ruby classes which represent each data type.	100**
 
 ---
-Ruby mainly recognizes following data types
+Ruby mainly recognizes the following data types
 1. Numbers
-This data types is used for storing numeric data into the variables.
-There are two types of Numbers supported by Ruby
+This data types is used for storing numeric data into the variables. 
 
-    - Integer: This data type is used to store whole numbers only. An integer value represented by **Integer** class in ruby.
- 
-      for example following ruby code creates an Integer variable
+    There are two types of Numbers supported by Ruby
+
+    - Integer: This data type is used to store whole numbers only. An integer value represented by the Integer class in ruby.
+
+      for example, following ruby code creates an Integer variable
 
       ```
       int_value = 1
       ```
-    - Float: This data type is used to store decimal numbers. A decimal value is represented by **Float** clas in Ruby.
+    - Float: This data type is used to store decimal numbers. A decimal value is represented by Float class in Ruby.
 
-      for example following ruby code creates a Float varible
+      for example, following ruby code creates a Float variable
 
       ```
       float_value = 1.0
       ```
 2. Boolean:
-Boolean type can have one two possible values true or false. A **true** value is represented by **TrueClass** and a **false** value is represented by **FalseClass** in Ruby.
+Boolean type can have one-two possible values true or false.
 
-    For example following Ruby code creates a variable of type TrueClass
+    A **true** value is represented by **TrueClass** and a **false** value is represented by **FalseClass** in Ruby.
+
+    For example, the following Ruby code creates a variable of type TrueClass
     ```
     boolean_value = true
     ```
 
 3. Strings:
-In Ruby a string is a sequence of characters enclosed within quotes (**'**) or double quotes (**"**). They are represented by **String** class in Ruby. String values are very useful for giving feedback from application to the user.
+In Ruby, a string is a sequence of characters enclosed within quotes (**'**) or double quotes (**"**). They are represented by the **String** class in Ruby. String values are very useful for giving feedback from the application to the user.
 
-    For example following Ruby code prints a string message on user screen to input a integer value.
+    For example following Ruby code prints a string message on the user screen to input an integer value.
 
     ```
     puts "Please enter a Integer value"
     ```
 4. Hashes:
-In ruby a Hash is a collection of key and value pairs. The values stored in this type of collection can be retrieved by the key associated with the collection. Hashes are represented by the Ruby class **Hash**.
+In ruby, a Hash is a collection of key and value pairs. The values stored in this type of collection can be retrieved by the key associated with the collection. Hashes are represented by the Ruby class **Hash**.
 
-    A Hash is declared by enclosing key value pair between curly braces and key-value pairs can be declared by 
-    placing key and value seperated by a double arrow 
+    A Hash is declared by enclosing key-value pair between curly braces and key-value pairs can be declared by placing key and value separated by a double arrow 
 
     **{ key => value }**
 
-    The key in key-value pair can be of data type String or Symbol. Whereas the value in the pair can be of any type of objects allowed in Ruby.
+    The key in the key-value pairs can be of data type String or Symbol. Whereas the value in the pair can be of any type of objects allowed in Ruby.
 
-    For example below code produces a Hash with key as name of the food item and associated string value as the category.
+    For example below code produces a Hash with key as the name of the food item and associated string value as the category.
 
     ```
     foods = {
@@ -364,20 +366,20 @@ In ruby a Hash is a collection of key and value pairs. The values stored in this
     }
     ``` 
 5. Arrays
-In Ruby array is nothing but list of values. The values can be any object of allowed types in Ruby. An array is represented by the Ruby class **Array**.
+Arrays In Ruby array is nothing but a list of values. The values can be any object of allowed types in Ruby. An array is represented by the Ruby class **Array**.
 
-    An array can be declared by enclosing comma seperated list of values between square brackets **[ value1, value2, value3, ... ]** The values in an array can be retrieved using its position in the list. The position or array items is called **Index** which start from 0.
+    An array can be declared by enclosing a comma-separated list of values between square brackets **[ value1, value2, value3, ... ]** The values in an array can be retrieved using its position in the list. The position or array items is called **Index** which starts from 0.
 
-    For example following Ruby code creates an array of string representing movies and print the first item in movies array ("Star wars").
+    For example, the following Ruby code creates an array of string representing movies and prints the first item in a movie array ("Star Wars").
 
     ```
     movies = ["Star wars", "The Dark Knight", "The Godfather", "Titanic", "Gladiator"]
     p movies[0]
     ```
 6. Symbols:
-In ruby strings can be stored at a unique location using Symbols. Symbols are light weight way of represting and storing strings at a unique location. Once a symbol is created they are always retrieved from the same memory location everytime the symbol referenced next time in the application. The symbol values are represented by **Symbol** class.
+Symbols: In ruby strings can be stored at a unique location using Symbols. Symbols are a lightweight way of representing and storing strings at a unique location. Once a symbol is created they are always retrieved from the same memory location every time the symbol referenced next time in the application. The symbol values are represented by **Symbol** class.
 
-    A symbol can be created by prefixing colon **:** in front of any string but without quotes. For example below Ruby code generates a Symbol **Gladiator** and stores into a variable movie_name
+    A symbol can be created by prefixing colon: in front of any string but without quotes. For example below Ruby code generates a Symbol **Gladiator** and stores into a variable movie_name.
 
     ```
     movie_name = :Gladiator
