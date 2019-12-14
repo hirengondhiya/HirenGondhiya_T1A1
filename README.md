@@ -35,60 +35,56 @@ The information mentioned above is mainly aquired from following sources
 **Explain how each technology has contributed to the development of the internet.	50 - 100 words per dot point**
 ---
   1. _**Packets**_
-    The information that is sent over the Internet is sent in form of Packets. Packets are nothing but small pieces of information that is created by breaking the message that is being communicated. The network that send information in form of packets are called **packet switched networks**.
+    The information that is sent over the Internet is sent in form of Packets. Packets are nothing but small pieces of information that is created by breaking the message that is being communicated into a sequence of packets. 
 
-      Each Packet contains small part of the message and metadata about the message that helps the message to be delivered and rebuilt at the destination. Most network packets are split into three parts as described below:
+      Each Packet contains small part of the message and metadata about the message that helps the message to be delivered and rebuilt at the destination. Typically a packet is made of following components:
 
       ![Packet Structure](./docs/q2-packet-structure.gif)
     
-    *Image source*: https://computer.howstuffworks.com/question5251.htm
+    Image source: https://computer.howstuffworks.com/question5251.htm
     
   - **Header** 
   The header describes the information that is being carried by the packet. 
-  - **Payload** - The payload is actual small peice of the message that is being carried from sender to the receiver. It is also called the body or data of a packet.
+  - **Payload** - The payload is  small peice of the actual message that is being carried from sender to the receiver. As illustrated in the image above payload mainly contains the data and hence it is also called "data" of the packet.
 
   - **Trailer** - The trailer is used to indicate end of the message in a packet. Sometimes it may also be used for error checking. 
 
-2. _**IP addresses (IPv4 and IPv6)**_ An Internet Protocol address (IP address) is a logical numeric address that is assigned to every single computer, printer, switch, router or any other device that is part of a TCP/IP-based network. It is used to uniquely identify every node in the network.
+2. _**IP addresses (IPv4 and IPv6)**_ An IP address is a unique numeric address that is used to identify the computers and other devices on the Internet.
 
-    There are two versions of the Internet Protocol that are in common use in the Internet today. The original version of the Internet Protocol that was first used in 1983, that is Internet Protocol version 4 (IPv4). The rapid expansion of internet lead to exhaustion of IPv4 address space available for assignment to Internet service providers and end user organizations, and that lead the **Internet Engineering Task Force (IETF)** to explore new solutions to create larger address space capability in the Internet. The result was a redesign of the Internet Protocol which became eventually known as Internet Protocol Version 6 (IPv6) in 1995. 
+    There are two types IP addresses that are used by Internet. The initial version of the IP addressing system that was built is called IPv4. However due to very fast adoption of internet it lead to very large number of systems being connected to the internet. This lead to shortage of IP addresses that can be allocated to computers being connected to the Internet. Envisioning this shortage **Internet Engineering Task Force (IETF)** started looking for new solutions to create a larger address space capability on the Internet. The outcome of this exercise was that IETF had to create a new design of the Internet Protocol. The new design was named as Internet Protocol Version 6 (IPv6). 
 
 - *IPv4 addresses*
-  The traditional IP Address (known as IPv4) uses a 32-bit number to represent an IP address. An IP address is written in "dotted decimal" notation, which is 4 sets of numbers separated by period each set representing 8-bit number ranging from (0-255). An example of IPv4 address is 216.3.128.12.
+  IPv4 uses a 32-bit number to represent an IP address. Each address contains four parts separated by a dot(.). An example of IPv4 address is 127.0.0.1.
 
-  An IPv4 address is divided into two parts: network and host address. The network address determines how many of the 32 bits are used for the network address and the remaining bits are used for the host address. The host address can further divided into subnetwork and host number.
-
-  As mentioned earlier, IPv4 addresses is 32-bit number which means it is capable of providing roughly 4 billion unique numbers, and hence IPv4 addresses has run out by the year 2011 as more devices are connected to the IP network.
-- *IPV6 addresses* In IPv6, the address size is increased from 32 bits in IPv4 to 128 bits. This much of extra bits can provide approximately 3.403×1038 different combinations of addresses. This is deemed sufficient for the foreseeable future.
-
-  The intent of the new design was not to provide just a sufficient quantity of addresses, but also redesign routing in the Internet by allowing more efficient aggregation of subnetwork routing prefixes.
-
-  3. _**Router and Routing**_ 
-  - A *Router* is a hardware device designed to receive, analyze and move incoming packets to another network. It may also be used to convert the packets to another network interface, drop them, and perform other actions relating to a network.
-
-    Routers can analyze the data being sent over a network, change how it is packaged, and send it to another network or over a different network. For example, routers are commonly used in home networks to share a single Internet connection between multiple computers.
-  - *Routing* refers to establishing the routes that data packets take on their way to a particular destination. Routing can  take place within a proprietary network or over the internet. 
-
-    In general, routing involves the network topology, or the setup of hardware, that can effectively relay data. Standard protocols help to identify the best routes for data and to ensure quality transmission. Individual pieces of hardware such as routers are referred to as "nodes" in the network. Different algorithms and protocols can be used to figure out how to best route data packets, and which nodes should be used.
+  A 32-bit number, which used by IPv4, is capable of providing roughly 4 billion unique numbers. This address space is very limited compared to the number of devices that gets connected to the Internet.
+- *IPV6 addresses* IPv6 uses 128-bit number to generate the IP address. This results in approximately 3.403×1038 addresses. 
+3. _**Router and Routing**_ 
+  - A *Router* The main function of a Router is to direct the network packets to the network path which leads to delivery of the packet at the destination. There are two types of routers Logical and Physical. A Logical router is a software program running on servers whereas a physical router is a  device specially designed to perform routing.
+  - *Routing* refers to the process of identifying a network path that may lead delivery of data packets at their destination. This process is performed by specialized algorithms, implemented as software programs, used to identify the shortest network path to the destination.
 
   4. _**Domains and DNS**_
-  - The term *Domain* can refer either to a local subnetwork or to descriptors for sites on the internet.
-    - *Local subnetwork domains*: On a local area network (LAN), a domain is a subnetwork made up of a group of clients and servers under the control of one central security database. Within a domain, users authenticate once to a centralized server known as a domain controller, rather than repeatedly authenticating to individual servers and services. Individual servers and services accept the user based on the approval of the domain controller.
-    - *Internet domains*: On the internet, a domain is part of every network address, including website addresses, email addresses, and addresses for other internet protocols such as FTP, IRC, and SSH. All devices sharing a common part of an address, or URL, are said to be in the same domain.
-    
-      To obtain a domain, you must purchase it from a domain registrar. Internet domains are organized by level. Most people are familiar with the Top Level Domains (TLDs) of .com, .edu, .net, and .org. TLDs are the most general and basic part of the URL. There are actually many top level domains.  Every country is assigned one; for example: for Australia ".au" is the contry code for the top level domain.
+  - The term *Domain* can refer either to a local subnetwork or to the host part of the URL for sites on the internet.
+    - *Local subnetwork domains*: On a private network, a domain is a group of resources (computers, devices, servers, and users) which can be identified by a specialized server called Domain controller. Once a resource has identified itself to its domain controller it can use approved services to communicate with other identified resources within the domain and also outside of the private domain. 
+    - *Internet domains*: In the context of the internet, a domain is the part of the address that uniquely identifies the resources on the internet such as websites, emails.
+
+    For example: google.com is the domain name used by a company called Google to host its suite of internet web applications.
+
+      Before a domain can be used it is required to be registered with a domain registrar. A domain registrar is an entity which maintains a database of domain names, the entity to which the domain is allocated and the IP address of the system which would host the applications associated with the domain. The domain registrar also makes sure that each domain name is allocated only once.
   
-  - The *Domain Name System (DNS)* translates internet domains and hostnames to IP addresses and vice versa. On the internet, DNS automatically converts between the names typed in the address bar of a web browser to the IP addresses of web servers hosting those sites. Larger corporations use DNS to manage a company intranet. Home networks use DNS to access the internet but do not use it to manage the names of home computers.
+  - The *Domain Name System (DNS)* translates internet domains and hostnames to IP addresses and vice versa. On the internet, DNS automatically converts between the names typed in the address bar of a web browser to the IP addresses of web servers hosting those sites. Larger corporations use DNS to manage a company's intranet. Home networks use DNS to access the internet but do not use it to manage the names of home computers.
 
     DNS is a client/server network communication system. DNS clients send requests to and receive responses from DNS servers. Requests containing a name that results in an IP address being returned from the server are called forward DNS lookups. Requests that contain an IP address and result in a name, called reverse DNS lookups, are also supported. DNS implements a distributed database to store this name and last-known address information for all public hosts on the internet.
+
+
+  References
+  1. [What is a packet?
+](https://computer.howstuffworks.com/
+question525.htm)
 # Q3
 **Define the features of the following technologies that are essential in terms of the development of the internet:**
   - TCP
   - HTTP and HTTPS
   - web browsers (requests, rendering and developer tools)
-
-  ---
-  
 
 **Explain how each technology has contributed to the development of client and server communication over the internet	50 - 150 words for each technology**
 
@@ -96,11 +92,9 @@ The information mentioned above is mainly aquired from following sources
   
 - TCP
     
-    Transmission control protocol (TCP) is a network communication protocol designed to send data packets over the Internet.
+    The Transmission Control Protocol (TCP) is a set of rules created to communicate messages between computer systems via the Internet. It is one of the most commonly used protocols used by computer networks. The important feature of TCP protocol is that it is designed to make sure the data packets are transferred correctly between communicating devices over the network.
 
-    Transmission Control Protocol is one of the most used protocols in digital network communications and is part of the Internet protocol suite, commonly known as the TCP/IP suite. Primarily, TCP ensures end-to-end delivery of data between distinct nodes. TCP works in collaboration with Internet Protocol, which defines the logical location of the remote node, whereas TCP transports and ensures that the data is delivered to the correct destination.
-
-    Before transmitting data, TCP creates a connection between the source and destination node and keeps it live until the communication is active. TCP breaks large data into smaller packets and also ensures that the data integrity is intact once it is reassembled at the destination node.
+    The way TCP works is that it first establishes a network path between the sender and the receiver, and then it makes sure that the link between the sender and receiver of the message is maintained until all the messages are exchanged. TCP breaks each message into small chunks, also called packets and then sends the chunks over the physical link as a sequence of packets, and finally, it reassembles the packets into a message at the destination. TCP also implements methods to make sure that the integrity of individual packets is maintained and the message reconstituted at the destination is exactly the same as it was originated at the source.
 
 - HTTP and HTTPS
   
