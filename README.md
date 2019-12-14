@@ -187,24 +187,26 @@ The table below describes the major difference between a compiler and an interpr
 **Identify TWO commonly used programming languages and explain the benefits and drawbacks of each.	200 - 400 words on each language**
 
 ---
-1. C# is one of the languages supported by Microsoft .NET framework. The C# language is the preferred architecture for backend programming and automation in Windows environments. 
+1. C# is one of the languages supported by the Microsoft .NET framework. The C# language is the default language programming backend and self-operating applications using .net framework. 
 - Benefits:
-  - Its C-style syntax is much more popular with programmers who are used to languages such as Java or C++. Due to this it is very easy to adopt programmers who have experience with other programming languages.
-  - It integrates well with Windows. You don't need any special configurations to get a C# program to run in your Windows environment. Whether it's a web application, a Windows service, or a desktop app, C# programs are easily deployed on the network. As long as the target server or workstation supports .NET, your C# program deployment should be a smooth transition from development to production.
-  - C# is a compiled language, which means that the code stored on a public-facing server is in binary form. If the server gets hacked, the hacker doesn't automatically have access to the source code, with C#, the hacker must decompile or "crack" the software before the critical components of the program can be exploited.
+  - C# syntax is very similar to C and C++ programming languages. Since these two languages were the most early built languages a lot of experienced programmers have had at least some experience with them. That made it very easy to adopt C# for the programmers who have had experience with other programming languages.
+  - It integrates well with Windows. It is very easy to run C# applications on Windows devices because most of the modern Windows devices comes pre-installed with the .Net framework.  
+  - To execute a C# code it first needs to be converted into intermediate code using a C# compiler. This makes it hard to steal the source code from the server where the application is deployed. For example, if the server gets hacked, the hacker doesn't automatically have access to the source code, with C#, the hacker must decompile or "crack" the software before the critical components of the program can be exploited.
 - Drawbacks
-  - Eventhough compiling provides advantages it has its drawbacks as well which are inherited by C# being the compiled language. For example: Since the source code must be compiled each time a change is made, the whole application is required to be deployed again. This often leads to added bugs if a minor change isn't thoroughly tested.
+  - Even though compiling provides advantages it has its drawbacks as well which are inherited by C# being the compiled language. For example: Since the source code must be compiled each time a change is made, the whole application is required to be deployed again and if the application is not thoroughly tested minor bugs can easily slip to the production.
   - Since C# is a part of the .NET framework, the server running the application must support the .Net ecosystem.
 
 2. C Programming
+
+    C programming is a high-level programming language that was introduced in 1972 by its developer Dennis Ritchie.
 - Benefits
-  - Faster app execution: C compiler convets the source code into machine level binary code. This results in efficient program execution since the system can execute the application without need for additional run time to execute the application.
-  - Ability to run on minimum hardware: The resultant binary from C program is very light weight application which can run with system with minimal resources. Hence C programming is very useful to create firmware for smart devices.
+  - Faster app execution: C compiler converts the source code into machine level binary code. This results in efficient program execution since the system can execute the application without the need for additional run time to execute the application.
+  - Ability to run on minimum hardware: The resultant binary from the C program is a very lightweight application that can run with a system with minimal resources. Hence C programming is very useful to create firmware for smart devices.
 - Drawbacks
-  - Does not support OOPS: C programming language does not support oops (Object Oriented Programming) features which leads to a lot of difficulty in maintaining a large code base.
-  - No run time type checking: A C program does not check if valid data type is assigned to a variable or another type during execution of a program instead it does automatic type conversion. This leads to undesired results and complex bugs if programmer is not mindful of the above fact.
-  - No Exception Handling: The C compiler checks for syntax errors however there is no provision to handle run time errors. This results in application crashing suddenly if the programmer does handle each run time error.
-  - Lack of Garbage Collection: In C programming dynamic memory management is responsibility of the programmer. If the application requests for memory from heap it is responsibility of the programmer to release it at the end of the execution of the program. If memory management is not correctly implemented by a programmer the system may not be able to utilize the resources efficiently and it will result in overall performance degradation of computer system until system restart. 
+  - Does not support OOPS: C programming language does not support oops (Object Oriented Programming) features which leads to a lot of difficulty in maintaining a large codebase.
+  - No run-time type checking: A C program does not check if the valid data type is assigned to a variable or another type during execution of a program instead it does automatic type conversion. This leads to undesired results and complex bugs if the programmer is not mindful of the above fact.
+  - No Exception Handling: The C compiler checks for syntax errors however there is no provision to handle run time errors. This results in the application crashing suddenly if the programmer does handle each run time error.
+  - Lack of Garbage Collection: In C programming dynamic memory management is the responsibility of the programmer. If the application requests for memory from heap it is the responsibility of the programmer to release it at the end of the execution of the program. If memory management is not correctly implemented by a programmer the system may not be able to utilize the resources efficiently and it will result in overall performance degradation of the computer system until system restart. 
 
 # Q7
 **Identify TWO ethical issues from the areas below and discuss the extent to which an IT professional is ethically responsible in terms of the issue.**
