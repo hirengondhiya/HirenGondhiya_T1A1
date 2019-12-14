@@ -109,13 +109,11 @@ question525.htm)
   The main benefit of HTTPS over HTTP is that it facilitates communication of sensitive data over the internet. However another added advantage of HTTPS over HTTP is that it eliminates the need for scanning and filtering of the data and hence the information can be transferred much quicker.
 
 
-- web browsers (requests, rendering and developer tools)
+- Web browsers 
+  
+  A web browser is nothing but an application that can be used to connect to web sites over the internet and view the pages. It mainly uses HTTP or HTTPS protocol to request for the web pages and then renders the received HTML content based on the rules of the markup language.
 
-  A web browser is a software program that allows a user to locate, access, and display web pages. Browsers are used primarily for displaying and accessing websites on the internet.
-
-  The web browser displays a website by sending request the web server that is hosting the website in response the web server sends the page requested in by the browser. The page is sent in form of HTML markup which is then interpreted and rendered by the browser. 
-
-  Most of the modern browser comes with capability to debug the rendering of web page this is in form of developer tools. The developer tools can be used by developers to debug the issues with HTML, CSS or javascript associated with the page.
+  Most of the modern browser comes with the capability to debug the rendering of the web page this is in form of developer tools. The developer tools can be used by developers to debug the issues with HTML, CSS or javascript associated with the page.
 
 # Q4
 **Identify THREE data structures used in the Ruby programming language and explain the reasons for using each.	50 - 100 words on each data structure**
