@@ -227,29 +227,29 @@ The table below describes the major difference between a compiler and an interpr
 ---
 1. Access to a user's personal information
 
-    In information edge IT professionals collectively can and does have access to user's personal information in ways general masses are not even aware of. For example we as a user of social media hand out a lot of personal information such as Birth Dates, Legal Names, Phone Numbers to companies that generally we do not want people around us to know. This information can be used by the companies to formulate patterns of preferences for individuals and then use this patterns to influence spending behaviour.
+    In the information edge, IT professionals collectively can and do have access to user's personal information in ways general masses are not even aware of. For example, we as a user of social media hand out a lot of personal information such as Birth Dates, Legal Names, Phone Numbers to companies that generally we do not want people around us to know. This information can be used by the companies to formulate patterns of preferences for individuals and then use these patterns to influence spending behavior.
 
-    Many of us might have recognized that as soon as we search for phrases on internet for some information for example a tech tutorial and then when viewing videos through one of the free video streaming platform and we start getting ads for a popular online tech training platform. If the same thing would have been done by a co-worker who overheard the conversation that a colleague planning to buy a product and then another co-worker advising a specific brand without aknowledging that s/he has commercial interest in that brand it would have been described as unethical however the same pattern is being exhibited by tech companies by presenting advertisements of products matching the keywords that a user searched for in recent future.
+    Many of us might have recognized that as soon as we search for phrases on the internet for some information, for example, a tech tutorial and then when viewing videos through one of the free video streaming platforms and we start getting ads for a popular online tech training platform. If the same thing would have been done by a co-worker who overheard the conversation that a colleague planning to buy a product and then another co-worker advising a specific brand without acknowledging that s/he has commercial interest in that brand it would have been described as unethical however the same pattern is being exhibited by tech companies by presenting advertisements of products matching the keywords that a user searched for in recent past.
 
-    As an IT professional one is ethically responsible to look at the personal data of users and use it for personal gains. However they cannot be responsible for crafting parts of the algorithms that are used by companies to analyse user data and use it or sell it for profits. 
+    As an IT professional one is ethically responsible to look at the personal data of users and use it for personal gains. However, they cannot be responsible for crafting parts of the algorithms that are used by companies to analyze user data and use it or sell it for profits. 
 
-2. Freedom of thought, conscience, speech and the media
+2. Freedom of thought, conscience, speech, and the media
 
-    In today's social media age people share their views more openly believing they can remain annonymous even if their views does not confirm to the majority views. Feeling of being annonymous encourages individuals to express ideas or opinions without being judged by the people around them. 
+    In today's social media age people share their views more openly believing they can remain anonymous even if their views do not conform to the majority views. The feeling of being anonymous encourages individuals to express ideas or opinions without being judged by the people around them. 
 
     Freedom of thought is not interpreted by different societies and regimes in different ways. For example, speaking against government policies can be termed as "Acting against national interest" in some part of the world or as "Holding government executives accountable" in another.
 
-    This leads to ethical dielema for IT professionals specially when views are contradictory that of individuals compared to that of the other culture.
+    This leads to an ethical dilemma for IT professionals especially when views are contradictory that of individuals compared to that of the other culture.
 
-    **Case study: Freedom of thought, conscience, speech and the media**
+    **Case study: Freedom of thought, conscience, speech, and the media**
 
     The article referred to here is about [Google Employees Protest Secret Work on Censored Search Engine for China](https://www.nytimes.com/2018/08/16/technology/google-employees-protest-search-censored-china.html)
 
-    This article discusses about internal dissent of google employees about reports of Google secretly building a censored search engine for China. The employees being worried about they might be part of the product which does not follow their concience and demanding the company to be more transparent about what repurcussions of the project they are working on on larger context.
+    This article discusses about internal dissent of google employees about reports of Google secretly building a censored search engine for China. The employees being worried about they might be part of the product that does not follow their conscience and demanding the company to be more transparent about what repercussions of the project they are working on a larger context.
 
-    It also discusses about how Google's outspoken workforce has made the company change their strategy and not renew contract with Pentagon for AI based weaponery improvement program.
+    It also discusses about how Google's outspoken workforce has made the company change its strategy and not renew the contract with Pentagon for an AI-based weaponry improvement program.
 
-    Therefore, as an IT professional we should also remember the fact that before being an IT perons we are human beings and the idea of freedom of thought and conscience is not limited in personal context but it is part of professional context as well.
+    Therefore, as an IT professional, we should also remember the fact that before being an IT person we are human beings and the idea of freedom of thought and conscience is not limited in personal context but it is part of the professional context as well.
 
 
 
